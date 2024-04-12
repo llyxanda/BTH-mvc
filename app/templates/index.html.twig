@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+    {% block body %}
+    <h1>Presentation</h1>
+    <p>My name is Alexandra Berivoe and I am 40 years old, born and raised in Romania. In 2009 I have moved to Sweden with a job opportunity and I have stayed and built a family and life here, in Stockholm, where I live with my 2 children, age 10 and 8.
+I enjoy problem solving a lot and that is what drives me to study webbprogrammering and hope to work with that in the future.
+Outside hanging out with my children, I enjoy going to Yoga classes, reading and listening to music.
+</p>
+<p>Talk soon!</p>
+    <a href="{{ asset('img/me.jpg') }}">
+        <img src="{{ asset('img/me.jpg') }}" alt="">
+    </a>
+{% endblock %}

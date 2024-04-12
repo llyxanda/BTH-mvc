@@ -1,0 +1,55 @@
+
+body {
+
+    margin: 0 auto;
+    max-width: 80%;
+    background: url('../images/background.jpg');
+    background-size: cover;
+}
+
+h1 {
+    border-bottom: 4px double #ccc;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 20em; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Reset default margin and padding */
+nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Background color */
+    padding: 10px; 
+}
+
+/* Style the list items (menu items) */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline-block; /* Display items horizontally */
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+/* Style the links */
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    background-color: #555; /* Darker background color */
+}
