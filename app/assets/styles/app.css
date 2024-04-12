@@ -1,17 +1,26 @@
 
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 
-    margin: 0 auto;
-    max-width: 80%;
-    background: url('../images/background.jpg');
-    background-size: cover;
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #87baed;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
 h1 {
     border-bottom: 4px double #ccc;
 }
 
-img {
+#me {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -27,7 +36,6 @@ nav, ul {
 
 /* Style the navigation bar */
 nav {
-    background-color: #333; /* Background color */
     padding: 10px; 
 }
 
@@ -52,4 +60,32 @@ nav ul li a {
 /* Change link color on hover */
 nav ul li a:hover {
     background-color: #555; /* Darker background color */
+}
+
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.row {
+        display: flex;
+      }
+      
+.col-md-6 {
+        flex: 50%;
+      }
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Switch to a single column layout on smaller screens */
+    }
+    .col-md-6 {
+        width: 100%; /* Each column takes full width on smaller screens */
+    }
 }
