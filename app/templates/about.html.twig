@@ -2,11 +2,26 @@
 
 {% block title %}About{% endblock %}
 
-    {% block body %}
-    <h1>About</h1>
-    <p>An image which can be clicked on.</p>
-    <a href="{{ asset('img/glider.svg') }}">
-        <img src="{{ asset('img/glider.svg') }}" alt="">
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About MVC</h2>
+                    <p> The course Object-Oriented Web Technologies, a.k.a. MVC, focuses on object-oriented programming 
+    techniques in the programming language PHP. Classical object-oriented constructs are dealt with 
+    alongside object-oriented programming in web-based frameworks, along with databases and unit testing.
+    </p>
+                <p>Git-repo: <a href="https://github.com/dbwebb-se/mvc/tree/main">Git-repo</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2>My GitHub-repo</h2>
+                <p>My GitHub-repo: <a href="https://github.com/llyxanda/BTH-mvc">My GitHub-repo</a></p>
+                    <a href="{{ asset('img/php.png') }}">
+        <img src="{{ asset('img/php.png') }}" alt="" class="img-fluid">
     </a>
-    <img src="{{ asset('build/images/background.jpg') }}" alt="">
+                            </div>
+        </div>
+    </div>
+      {% include 'footer.html.twig' %}
 {% endblock %}
